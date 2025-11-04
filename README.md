@@ -11,8 +11,3 @@ yeah ah
 
 
 ## 예제 코드
-
-```javascript
-function setup() {
-
-}
