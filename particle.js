@@ -12,6 +12,10 @@ class Particle {
     this.acc.add(aForce);
   }
 
+  windForce(wind) {
+    this.acc.add(wind);
+  }
+
   update() {
     this.vel.add(this.acc);
     this.pos.add(this.vel);
@@ -31,7 +35,6 @@ class Particle {
       this.pos.x = 0;
     }
   }
-
 
   show() {
     fill(this.c);
