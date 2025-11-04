@@ -1,11 +1,18 @@
+let ball;
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 200);
+
+  ball = new Particle();
 }
+
 
 function draw() {
   background(220);
 
-  circle(220, 200, 30);
+  let gravity = createVector(0, 0.3);
+  ball.addForce(gravity);
 
-  ellipse(100,100,50,20);
+  ball.update();
+  ball.show();
 }
